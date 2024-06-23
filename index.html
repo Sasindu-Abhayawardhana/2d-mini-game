@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Game</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer type="module" src="js/character-user.js"></script>
+    <script defer type="module" src="./js/character-game.js"></script>
+</head>
+<body>
+
+<div id="overlay">
+    <h1>Loading Game . . .</h1>
+    <div id="progress-bar">
+        <div id="bar"></div>
+    </div>
+</div>
+
+<div id="character-user"></div>
+<div id="character-game"></div>
+<div id="platform" class="hide-background-element">
+    <div id="tile1"></div>
+    <div id="tile2"></div>
+    <div id="tile3"></div>
+</div>
+
+<div id="start-screen">
+    <h2><span>2D</span> Mini Game</h2>
+    <button id="play-button" type="button">PLAY</button>
+    <div id="footer">Copyright &copy;2024 Sasindu Abhayawardhana. All Rights Reserved.</div>
+</div>
+
+<div id="scoreboard">
+    <span>
+        <div id="score-icons-user" class="score-icons">
+
+            </div>
+        <label id="character-user-score" class="character-score hide-background-element">0</label>
+    </span>
+
+    <span>
+        <div id="score-icons-robot" class="score-icons ">
+            </div>
+        <label id="character-robot-score" class="character-score hide-background-element">0</label>
+        </span>
+</div>
+
+</body>
+</html>
